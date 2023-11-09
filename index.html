@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width"> <!--usando a tag meta para ler a quantia de px do dispositivo que estiver usando a página e adaptando-a junto com o código-->
+        <title>Produtos - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+		<link rel="icon" href="icone_logo.ico">
+		<!--usando API de fontes do google.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caixa_link">
+                <h1 id="imagem_logo">
+                    <img src="logo.png" alt="Logo - Barbearia Alura">
+                </h1>
+                <nav>
+                    <ul>
+                        <li class="lista_produtos"><a href="index.html">Home</a></li>
+                        <li class="lista_produtos"><a href="produtos.html">Produtos</a></li>
+                        <li class="lista_produtos"><a href="contatos.html">Contato</a></li>
+                        <li class="lista_produtos"><a href="http://www.linkedin.com/in/vpelizzari">LinkedIn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <img class="imagemP" src="barbearia.jpeg" alt="Foto - Barbearia(sala completa com equipanemtos) - Estilo vintage"> <!--chamando imagem na página-->
+		<!--falarmos de estilo usamos "CLASSE", para falar de comportamento usamos "IDENTIFICADOR"-->
+
+		<main>
+			<section class="apresentacao">
+				<h2 class="titulo_principal">Sobre a Barbearia Alura</h2><br>
+
+				<img class="ferramentas_trabalho" src="ferramentas.jpg" alt="Ferramentas de barbeiro">
+			
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+				
+				<p"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong></em></p>
+
+				<p id="p3">Oferecemos profissionais experientes e antenados às mudanças do mundo da moda. <!--definindo nome para o elemento-->
+				O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>	<!--<div> é uma divisão visual e a <section> é onde tem um conteúdo completo e complexo-->
+			
+			<div class="mapa_conteudo">
+				<section class="mapa">
+					<h3 class="titulo_principal">Nossa localização</h3>
+					<p>Nosso estabelecimento está localizado no coração da cidade</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.5954458269766!2d-53.61402612473193!3d-25.485180777526697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f1119d538f3de5%3A0x9b3987fda4580cdb!2sAv.%20Tancredo%20Neves%20-%20Cap.%20Le%C3%B4nidas%20Marques%2C%20PR%2C%2085790-000!5e0!3m2!1spt-BR!2sbr!4v1682693141598!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<!--utilizando mapa do google-->
+				</section>
+			</div>
+
+			<section class="lista_beneficios">
+				<div class="conteudos_beneficios">
+					<h3 class="titulo_principal">Benefícios</h3>
+
+					<!--<ol></ol> Lista ordenada-->
+					<!--<ul></ul> Lista desordenada-->
+					<ul class="beneficios_lista">
+						<li class="item_beneficio">Atendimento aos clientes</li> <!--necessário usar LI para listar os -->
+						<li class="item_beneficio">Ambiente planejado</li> <!--class - a classe pode ser usado no lugar do id-->
+						<li class="item_beneficio">Localização excelente</li>
+						<li class="item_beneficio">Profissionais Especializados</li>
+						<li class="item_beneficio">Atendimento à domicílio</li>
+						<li class="item_beneficio">Preço diferenciado</li>
+					</ul><img class="imagem_beneficios" src="benecifios.jpeg" alt="Foto- Cadeira de barbeiro - Estilo vintage"> <!--para usar o inline-block no display e ficar um elemento ao lado do outro, precisam estar juntos/grudados um ao outro-->
+
+					<div class="video">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/l87x_wNdO7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png" alt="Logo - Barbearia Alura">
+			<p class="copyright">&copy; Copyright Barbearia Alura - Since 2019</p>
+
+			<label class="switch">
+				<input type="checkbox">
+				<span class="slider round"></span>
+			  </label>
+			  
+		</footer>
+	</body>
+</html>

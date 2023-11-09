@@ -1,0 +1,558 @@
+body{
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Roboto Slab', serif; /*declarando fonte para toda a página*/
+}
+
+header{
+    background: #808080;
+    padding: 20px 0;
+}
+
+.caixa_link{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*ordem esquerda, baixo, direita e sobre = -> desce <- sobe*/
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: darkblue;
+    /*text-decoration: underline;*/
+    text-decoration:line-through;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*espaçamento interno*/
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #707070;
+    color: #707070;
+}
+
+.produtos li:active{
+    border-color: darkblue;
+    color: darkblue;
+}
+
+.produtos li:hover h2{
+    font-size: 35px;
+    border-color:  #707070;
+    color:  #707070;
+}
+
+.produtos li:active h2{
+    font-size: 35px;
+    border-color:  darkblue;
+    color:  darkblue;
+}
+
+.produtos li:hover .descricao_produto{
+    font-size: 23px;
+    color:  #707070;
+}
+
+.produtos li:active .descricao_produto{
+    font-size: 23px;
+    color:  darkblue;
+}
+
+.produtos li:hover .preco_produto{
+    font-size: 27px;
+    color:  #707070;
+}
+
+.produtos li:active .preco_produto{
+    font-size: 27px;
+    color:  darkblue;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.descricao_produto{
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.preco_produto{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
+}
+
+footer{
+    text-align: center;
+    /*background: #707070;*/
+    background: url("bg.jpg");
+    padding: 33px;
+    color: #FFFFFF;
+}
+
+.copyrigth{
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+#body_contatos {
+    background: linear-gradient(#909090, #F3F3F3);
+    margin: 0;
+    padding: 0;
+}
+
+
+.main_contatos{
+    width: 940px;
+	margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p, form legend{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.input_padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 15px 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.opcao_dia, .opcao_hora {
+    display: inline-block;
+    width: 40%;
+}
+
+.opcao_hora {
+    margin-left: 10%;
+}
+
+.enviar{
+    width: 30%;
+    padding: 15px 0;
+    background-image: url('bg.jpg');
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer; /*muda da fleca para a mão, a hora que o mouse está encima*/
+    transition: 0.5s all; /*controla a alteração definida (background) conforme o tempo definido em segundos(1s)*/
+}
+
+.enviar:hover{
+    border: 2px solid #000000;
+    font-size: 33px;
+    width: 35%;
+    color: #FFFFFF;
+    /*transform: rotate(360deg) scale(1.2); /*transform = transformar, scale = escala - transforma o tamanho - rotate = muda a rotação do objeto*/
+}
+
+.enviar:active{
+    font-size: 33px;
+    background: darkblue;
+    color: #000000;
+}
+
+table{
+    margin: 20px 0 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead{
+    background-image: url('bg.jpg');
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 15px;
+}
+
+/*Página inicial*/
+.imagemP{
+    width: 100%;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 2em; /*em = medida igual ao tamanho original de determinado elemento, neste exemplo queremos que a fonte seja duas vezes maior que a original*/
+    margin: 0 0 1em;
+    clear: left; /*está limpando o FLOAT LEFT, usado na imagem ferramentas de trabalho, para não afetar mais a posição dos outros elementos*/
+    font-weight: bold;
+    text-shadow:  1px 1px darkblue; /*adicionar sombra interna, X(eixo) Y (eixo) eixos iniciais e o tamanho da sombra e a cor*/
+}
+
+.titulo_principal::first-letter{ /*deixa apenas a primeira letra do elemento em negrito*/
+    font-weight: bold;
+}
+
+.apresentacao{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*p::first-line{
+    font-style: italic;      deixa toda a linha do elemento em italico
+}*/
+
+.apresentacao p{
+    margin: 0 0 1em;
+}
+
+.apresentacao strong{
+    font-weight: bold;
+}
+
+.apresentacao em{
+    font-style: italic;
+}
+
+.ferramentas_trabalho{
+    width: 150px;
+    float: left; /*elemento está flutuando na página, e com isso, a escrita ficam ao se redor, por todos estarem em uma unica 'caixa'; usamos - float + lugar em que queremos, neste caso left  esquerda*/
+    margin: 0 20px 20px 0; /*colocando margem na imagem: seguindo a ordem - 0 para cima, 20px para direita, 20px para baixo, 0 para a esquerda*/
+}
+
+.mapa_conteudo{
+    padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa{
+    width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p{
+    margin: 0 0 2em;
+	text-align: center;
+}
+
+.lista_beneficios{
+    padding: 3em 0;
+    background: linear-gradient(#888888, #585858);
+}
+
+.conteudos_beneficios{
+    width: 640px;
+    margin: auto;
+}
+
+.beneficios_lista{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.item_beneficio{
+    line-height: 1.5; /*espaçamento entre as linhas*/
+    padding: 10px;
+}
+
+.item_beneficio:before{ /*pode ser colocado qualquer coisa que ficará antes do elemento, como é um elemento visual, não pode ser selecionado, pois está na estilização*/
+    content: "✦ ";
+}
+
+.item_beneficio:after{ /*pode ser colocado qualquer coisa que ficará depois do elemento, como é um elemento visual, não pode ser selecionado, pois está na estilização*/
+    content: "";
+}
+
+.item_beneficio:first-child{ /*pega o elemento espeficicado dentro de uma classe, aqui pega a "primeira criança", o primeiro elemento (first-child, last-child...)*/
+    font-weight: bold; /*NÃO ESTÁ FUNCIONANDO, POIS DEIXEI TODOS EM NEGRITO NO 'beneficios_lista' - ESTE FICA APENAS DE EXEMPLO*/
+}
+
+.item_beneficio:nth-child(3){ /*pega o elemento espeficicado dentro de uma classe, aqui pega o 3º elemento (nth-child(X)), e se colocar um 'n' logo após o número = nth-child(2n) pega todos os elementos pares...*/
+    font-weight: bold; /*NÃO ESTÁ FUNCIONANDO, POIS DEIXEI TODOS EM NEGRITO NO 'beneficios_lista' - ESTE FICA APENAS DE EXEMPLO*/
+}
+
+.imagem_beneficios{
+    width: 60%;
+    /*opacity: 0.8;*/ /*opacidade, deixa um elemento opaco conforme a quantia escolhida. É interessante usar com transsition com hover, conforme passa o mouse sobre, ele aparece... é possível usar também em cores e fazer sombra*/
+    box-shadow: 10px 10px 5px 3px #000000; /*para fazer sombra = box-shadow: X (eixo) Y (eixo) BLUR (grau de espalhamento/indo ao transparente) QB (quantidade da borda/o quanto ela irá se espalhar) e a cor; É POSSÍVEL COLOCAR MAIS QUE UMA SOMBRA USANDO A ','. EX: box-shadow: 10px 10px 5px 3px #000000, box-shadow: -10px -10px -5px -3px #FFFFFF; */
+    /*box-shadow: inset 0 0 10px #585858;*/ /*adicionar sombra interna, X(eixo) Y (eixo) eixos iniciais (eixos iniciais não são deslocáveis, sempre são 0) e o tamanho da sombra e a cor*/
+}   
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+.toggle-switch:hover .toggle-slider {
+    background-color: #04c253;
+}
+
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background: linear-gradient(#FEFEFE, #888888);
+    background-image: linear-gradient(to bottom, #FEFEFE, #888888); /*ou to right*/
+    border-radius: 34px;
+    overflow: hidden;
+}
+
+.toggle-switch:hover{
+    background-color: #04c253;
+}
+  
+.toggle-switch input[type="radio"] {
+    display: none;
+}
+  
+.toggle-switch label {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px; /* ajuste a posição do texto */
+    font-size: 14px;
+    font-weight: bold;
+}
+  
+.toggle-switch input[type="radio"]:checked + .toggle-slider {
+    transform: translateX(40px);
+    background-color: #04c253;
+}
+  
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1497ee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+                          
+.switch-label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.switch-container{
+      display: flex;
+      align-items: center;
+}
+  
+.checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    appearance: none;
+    border: 2px solid #1497ee;
+    background: #1497ee;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    border-color: #000000;
+}                    
+                      
+.checkbox input[type="checkbox"]:checked {
+    background-color: #04c253;
+    border-color: #000000;
+}                      
+                      
+.checkbox input[type="checkbox"]:checked:after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+}                      
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}                    
+  
+  
+
+/*SELETORES DIRETOS, IMPORTANTE PARA USAR QUANDO PRECISA SELECIONAR ALGO DENTRO DE UM ELEMENTO MÃE COM MUITOS OUTROS ELEMENTOS FILHOS. EX: selecionar a tag <p> na tag <main>, e dentro da tag <main> a muitas outras tags diferentes com tags <p>, para selecionar apenas as filas diretas, ou seja, que não vem dentro de outra tag que nçao seja a <main>, usamos o seguinte = main > p{}, e assim buscará as respectivas tags, isto serve para outros elementos*/
+
+/*se existir mais de uma tag filha identica dentro de uma tag mãe, é usado a tag mais diferente que esteja próxima da desejada como âncora e seguido a tag desejada. Ex: várias tags <p> perto de uma tag <img>, usamos = img + p{}, para selecionar a mais próxima da âncora utilizada, se está for a desejada; se quer pegar todos os <p> após a âncora <img>, usa-se = img ~p{}*/
+
+/*se quisermos usar negação como seletor, usa-se main p:not(#missao){} = selecionando dentro da tag <main> todas as tags <p> menos as tags <p> que tem um id de missão*/
+
+@media screen and (max-width: 964px) /*se o dispositivo estiver tamanho máximo de 480px, ele entrega outra resolução/resultado*/ { /*perguntado ao navegador o tamanho da tela e a quantia de px que há no dispositivo*/
+    .caixa_link, .apresentacao, .conteudos_beneficios, .mapa, .video, .produtos, .main_produtos{
+        width: auto;
+    }
+
+    h1, .main_produtos{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .item_beneficio, .imagem_beneficios, .main_produtos{
+        width: 100%;
+    }
+
+    .produtos {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .produtos li {
+        display: inline-block;
+        width: 30%;
+        margin: 0 2%;
+        vertical-align: top;
+        text-align: center;
+        width: 80%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .produtos li:hover {
+        border-color: #707070;
+        color: #707070;
+    }
+    
+    .produtos li:active {
+        border-color: darkblue;
+        color: darkblue;
+    }
+    
+    .produtos li:hover h2 {
+        font-size: 35px;
+        border-color:  #707070;
+        color:  #707070;
+    }
+    
+    .produtos li:active h2 {
+        font-size: 35px;
+        border-color:  darkblue;
+        color:  darkblue;
+    }  
+    
+    .descricao_produto {
+        font-size: 16px;
+        margin: 10px 0 0;
+    }
+    
+    .preco_produto {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0 0;
+    } 
+    
+    .main_contatos {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    form label, form p, form legend {
+        font-size: 18px;
+    }
+
+    .input_padrao {
+        width: 100%;
+    }
+    
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* definindo a direção do flex container */
+    }
+
+    .opcao_dia, .opcao_hora {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opcao_hora {
+        margin-left: 0;
+    }
+
+    .enviar {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    table {
+        font-size: 16px;
+    }
+}
